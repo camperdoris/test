@@ -1,0 +1,43 @@
+{
+    "title": "gitbook",
+    "description": "gitbook",
+    "author": "dorischang",
+    "language": "zh-tw",
+    "root": ".",
+
+    "plugins": [
+        "donate",
+        "edit-link",
+        "github-buttons"
+    ],
+
+    "pluginsConfig": {
+        "donate": {
+            "wechat": "https://i.imgur.com/LCX45aA.jpg",
+            "alipay": "https://i.imgur.com/u1zyG9Y.jpg",
+            "title": "",
+            "button": "圖片",
+            "alipayText": "gitbook",
+            "wechatText": "gitbook"
+        },
+        "github-buttons": {
+            "repo": "darrenliuwei/gitbook",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        "edit-link": {
+            "base": "https://github.com/darrenliuwei/gitbook/edit/master",
+            "label": "編輯此頁"
+        },
+        "github-buttons": {
+            "buttons": [{
+              "user": "azu",
+              "repo": "JavaScript-Plugin-Architecture",
+              "type": "star",
+              "size": "small"
+            }]
+        }
+    }
+}
