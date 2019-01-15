@@ -147,8 +147,15 @@ npm install gitbook-plugin-github-buttons
     git commit -m 'up'
     git push -u origin master
 
-    c)master 分支保存書藉
-    gh-pages 分支保存書職編譯後的 HTML 文件
+    c)master 分支保存書藉源碼
+    
+    d)gh-pages 分支保存書職編譯後的 HTML 文件
     先將TEST資料夾中的_book資料整個複製備份
     然後輸入 git checkout -b gh-pages
     此時原本（master）會改為（gh-pages）
+    將test資料夾中的資料刪除
+    把先前備份的_book資料夾內容複製進去
+    git add .
+    git commit -m 'up'
+    git push origin gh-pages
+    
