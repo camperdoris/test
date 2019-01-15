@@ -133,10 +133,22 @@ npm install gitbook-plugin-github-buttons
         在test資料夾中點擊右鍵，選擇Git bash here
         並執行gitbook serve
         開啟電子書  http://localhost:4000
-        進入 github.com 網站
+    b)  進入 github.com 網站
+        Create a new repository   
+        name：test
+        Description：電子書測試
+        選擇public免費，如果選私人要付錢
+        建立
 
     b)第一次使用需初始化
-    git init
-master 分支保存書藉
+    git init   會生成一個隱藏的文件夾.git，可使用ls-la查看
+    git remote add origin https://github.com/camperdoris/test.git
+    git add .
+    git commit -m 'up'
+    git push -u origin master
 
-gh-pages 分支保存書職編譯後的 HTML 文件
+    c)master 分支保存書藉
+    gh-pages 分支保存書職編譯後的 HTML 文件
+    先將TEST資料夾中的_book資料整個複製備份
+    然後輸入 git checkout -b gh-pages
+    此時原本（master）會改為（gh-pages）
